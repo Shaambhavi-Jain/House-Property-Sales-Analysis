@@ -32,7 +32,7 @@ limit 1
 2. Which postcode has the highest average price for total sales?
 ```sql
 select postcode, avg(price) from time_series. raw_sales group by postcode
-order by avg (price) desc
+order by avg(price) desc
 limit 1
 ```
 
@@ -152,7 +152,7 @@ where price > (select round(AVG(price)) from time_series.raw_sales)
 ```sql
 with cte as (select *,
 concat(extract (year from datesold), " Q", extract(quarter from datesold)) as year_quarter
-from time_series. raw_sales)
+from time_series.raw_sales)
 
 select year_quarter, count(*) from cte
 group by year_quarter
@@ -163,7 +163,7 @@ order by year_quarter
 ```sql
 with cte as (select *,
 concat(extract (year from datesold), " Q", extract(quarter from datesold)) as year_quarter
-from time_series. raw_sales)
+from time_series.raw_sales)
 
 select year_quarter, sum(price) from cte
 group by year_quarter
