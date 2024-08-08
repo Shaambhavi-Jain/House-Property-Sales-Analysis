@@ -1,4 +1,4 @@
-#### Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 1. Which date corresponds to the highest number of sales?
 ```sql
 select date(datesold), count(*) from time_series.raw_sales
@@ -49,7 +49,7 @@ where extract(year from datesold) = 2017
 group by concat(extract(year from datesold), " Q", extract(quarter from datesold))
 ```
 
-#### Time Series Analysis
+### Time Series Analysis
 1. Calculate the total number of sales for each quarter?
 ```sql
 with cte as (select *,
