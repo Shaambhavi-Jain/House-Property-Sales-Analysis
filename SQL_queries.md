@@ -42,7 +42,7 @@ with cte as (select extract(year from datesold) as year, price from time_series.
 
 select year, sum(price) from cte
 group by year
-order by sum (price)
+order by sum(price)
 limit 1
 ```
 
