@@ -1,9 +1,0 @@
-#### Exploratory Data Analysis (EDA)
-1. Which date corresponds to the highest number of sales?
-
-```sql
-select date(datesold), count(*) from time_series.raw_sales
-group by datesold
-order by count(*) desc
-limit 1 
-```
