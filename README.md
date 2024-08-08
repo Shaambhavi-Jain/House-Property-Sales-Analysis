@@ -28,10 +28,10 @@ A series of SQL queries were employed to analyze the dataset and identify key pa
 ### Key Findings 
 Some of the key findings from the analysis are:
 - most common number of bedrooms are 3 and 4
-- the median sale price is
-- the year with the highest median sale price is
-- The year with the lowest sales is
-- the percentage of properties above the average price is 
+- the median sale price is 550000
+- the year with the highest median sale price is 2018 with the median price of 615000
+- The year with the lowest sales is 2007
+- the percentage of properties above the average price is 39%
 
 
 ### Recommendations or Conclusion or What? 
