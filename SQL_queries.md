@@ -32,5 +32,14 @@ where r <= 6
 ```
 5. What is the most common number of bedrooms?
 ```sql
-
+select bedrooms, count(*) from time_series.raw_sales
+group by bedrooms
+order by count(*) desc
+```
+6. Find the number of properties sold in each quarter of 2017
+```sql
+select concat(extract(year from datesold), " Q", extract(quarter from datesold)) as "y_q", count(*)
+from time_series.raw_sales
+where extract(year from datesold) = 2017
+group by concat(extract(year from datesold), " Q", extract(quarter from datesold))
 ```
