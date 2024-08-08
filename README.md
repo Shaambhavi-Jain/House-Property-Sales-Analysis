@@ -12,22 +12,22 @@ The project utilizes a dataset from [Kaggle](https://www.kaggle.com/datasets/hta
 - **number_of_bedrooms**: Number of bedrooms in the property
 
 ### Business Problems 
-[Click here for the full List of Problems]
-### Data Exploration and Analysis
-The analysis aimed to address business problems like: 
-- **Distribution of property prices** - This involved calculating medians and interquartile ranges (IQR) to identify outliers within the dataset.
-- **Sales over time** -  Quarterly and yearly sales of properties, ranging from 2007 to 2019
-- **Time Series Analysis** - This included month-over-month percentage change in average property prices, year with the highest median property price, etc.
-- **Property Type Analysis** - 
+The analysis addresses a series of business questions categorized into 5 key areas:
+- Data Cleaning
+- Exploratary Data Analysis (EDA)
+- Statistical Analysis
+- Time Series Analysis
+- Data Visualisation
 
-### Statistical Analysis
+[Click here](https://docs.google.com/document/d/1xdhP0A4YWFVdu4Sb_WyjAo8KZ7c6cNb8eQ1AFj_maMA/edit?usp=sharing) to view a detailed breakdown of the problems under these categories.
 
 ### Methodology 
-A series of SQL queries were employed to analyze the dataset and identify key patterns and trends.
-[Click here] to see the SQL queries along with the questions they answer.
+A series of SQL queries were employed to analyze the dataset and identify key patterns and trends. Microsoft Excel was utilized to create visualizations.
+[Click here] to view the SQL queries.
 
 ### Key Findings 
-Some of the key findings from the SQL queries are: 
+Some of the key findings from the analysis are:
+
 
 ### Recommendations or Conclusion or What? 
 
