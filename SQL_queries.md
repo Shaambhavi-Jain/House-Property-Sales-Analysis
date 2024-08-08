@@ -74,12 +74,66 @@ group by concat(extract(year from datesold), " Q", extract(quarter from datesold
 ### Statistical Analysis
 1. What is the median property price?
 ```sql
+with cte as (
+select price,
+row_number() over(order by price) as "row_num"
+from time_series.raw_sales
+),
+median_numbers as (
+select * from cte
+where row_num in ((select count(*) from time_series.raw_sales)/2, (select count(*) from time_series.raw_sales)/2 + 1)
+)
 
+select round(avg(price)) as median from median_numbers
 ```
 
 2. Determine the year with the highest median property price?
 ```sql
+with cte as (
+select extract(year from datesold) as y, price,
+row_number() over(partition by extract(year from datesold) order by price) as "row_num"
+from time_series. raw_sales
+),
+cnt_of_sale as (
+select y, count(*) as cnt from cte
+group by y
+),
+odd_median_numbers as (
+select y, cnt,
+(case
+when cnt%2 = 1 then round ((cnt+1)/2)
+end) as median_th_value
+from cnt_of_sale
+),
+odd_years_median as (
+select cte.y, cte.price as median from odd_median_numbers
+join cte
+on odd_median_numbers.y = cte.y and odd_median_numbers.median_th_value = cte.row_num
+),
+even_median_numbers as (
+select y, cnt,
+(case
+when cnt%2 = 0 then round(cnt/2)
+end) as median_th_value
+from cnt_of_sale
+),
+even_years_median as (
+select cte.y, avg(cte.price) as median from even_median_numbers
+join cte
+on even_median_numbers.y = cte.y
+and (even_median_numbers.median_th_value = cte.row_num
+or even_median_numbers.median_th_value + 1 = cte. row_num)
+group by cte.y
+),
+medians as (
+select * from odd_years_median
+union all
+select * from even_years_median
+)
 
+select * from medians
+order by median desc
+limit 1
 ```
 
 3. Determine the outliers in the dataset using Interquartile range (IQR)
