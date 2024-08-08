@@ -92,7 +92,7 @@ select round(avg(price)) as median from median_numbers
 with cte as (
 select extract(year from datesold) as y, price,
 row_number() over(partition by extract(year from datesold) order by price) as "row_num"
-from time_series. raw_sales
+from time_series.raw_sales
 ),
 cnt_of_sale as (
 select y, count(*) as cnt from cte
@@ -143,7 +143,8 @@ limit 1
 
 4. Determine the percentage of properties with prices above the average price
 ```sql
-
+select 100 * (count(*)/(select count(*) from time_series.raw_sales)) from time_series.raw_sales
+where price › (select round(AVG(price)) from time_series.raw_sales)
 ```
 
 ### Time Series Analysis
