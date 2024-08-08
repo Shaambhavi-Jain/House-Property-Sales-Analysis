@@ -23,7 +23,7 @@ The analysis addresses a series of business questions categorized into 5 key are
 
 ### Methodology 
 A series of SQL queries were employed to analyze the dataset and identify key patterns and trends. Microsoft Excel was utilized to create visualizations.
-[Click here] to view the SQL queries.
+[Click here](https://github.com/Shaambhavi-Jain/House_Property_Sales_Analysis/blob/main/SQL_queries.md) to view the SQL queries.
 
 ### Key Findings 
 Some of the key findings from the analysis are:
