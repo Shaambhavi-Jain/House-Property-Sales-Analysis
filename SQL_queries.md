@@ -1,3 +1,25 @@
+## Table of Contents
+- [Data Cleaning](#data-cleaning)
+- [Exploratory Data Analysis](#exploratory-data-analysis-eda)
+- [Statistical Analysis](#statistical-analysis)
+- [Time Series Analysis](#time-series-analysis)
+- [Data Visualisation](#data-visualisation)
+
+### Data Cleaning
+1. Check for inconsistencies in the data
+```sql
+```
+
+2. Identify and handle missing values
+```sql
+
+```
+
+3. Identify and address potential errors or anomalies in the data
+```sql
+
+```
+
 ### Exploratory Data Analysis (EDA)
 1. Which date corresponds to the highest number of sales?
 ```sql
@@ -47,6 +69,27 @@ select concat(extract(year from datesold), " Q", extract(quarter from datesold))
 from time_series.raw_sales
 where extract(year from datesold) = 2017
 group by concat(extract(year from datesold), " Q", extract(quarter from datesold))
+```
+
+### Statistical Analysis
+1. What is the median property price?
+```sql
+
+```
+
+2. Determine the year with the highest median property price?
+```sql
+
+```
+
+3. Determine the outliers in the dataset using Interquartile range (IQR)
+```sql
+
+```
+
+4. Determine the percentage of properties with prices above the average price
+```sql
+
 ```
 
 ### Time Series Analysis
@@ -110,3 +153,5 @@ join cte c2
 on c1.postcode = c2.postcode and c1.y + 1 = c2.y
 -- now any particular postcode can be selected from this query result to view it's YoY growth data
 ```
+
+### Data Visualisation
