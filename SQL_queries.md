@@ -144,7 +144,7 @@ limit 1
 4. Determine the percentage of properties with prices above the average price
 ```sql
 select 100 * (count(*)/(select count(*) from time_series.raw_sales)) from time_series.raw_sales
-where price › (select round(AVG(price)) from time_series.raw_sales)
+where price > (select round(AVG(price)) from time_series.raw_sales)
 ```
 
 ### Time Series Analysis
