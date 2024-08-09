@@ -218,7 +218,7 @@ where price > (select round(AVG(price)) from time_series.raw_sales)
 1. Calculate the total number of sales for each quarter?
 ```sql
 with cte as (select *,
-concat(extract (year from datesold), " Q", extract(quarter from datesold)) as year_quarter
+concat(extract(year from datesold), " Q", extract(quarter from datesold)) as year_quarter
 from time_series.raw_sales)
 
 select year_quarter, count(*) from cte
@@ -229,7 +229,7 @@ order by year_quarter
 2. Calculate the total revenue from sales for each quarter?
 ```sql
 with cte as (select *,
-concat(extract (year from datesold), " Q", extract(quarter from datesold)) as year_quarter
+concat(extract(year from datesold), " Q", extract(quarter from datesold)) as year_quarter
 from time_series.raw_sales)
 
 select year_quarter, sum(price) from cte
