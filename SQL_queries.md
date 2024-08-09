@@ -12,9 +12,21 @@
 
 2. Identify and handle missing values
 ```sql
-
+select * from time_series.raw_sales
+where datesold is null
 ```
-
+```sql
+select * from time_series.raw_sales
+where postcode is null
+```
+```sql
+select * from time_series.raw_sales
+where price is null
+```
+```sql
+select * from time_series.raw_sales
+where propertyType is null
+```
 3. Identify and address potential errors or anomalies in the data
 ```sql
 
