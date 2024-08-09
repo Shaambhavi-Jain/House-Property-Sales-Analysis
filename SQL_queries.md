@@ -138,7 +138,36 @@ limit 1
 
 3. Determine the outliers in the dataset using Interquartile range (IQR)
 ```sql
+with cte as (
+select *,
+ntile(4) over(order by price) as price_quartile
+from time_series.raw_sales
+), 
+quartile_break_values as (
+select price_quartile, max(price) as quartile_break from cte
+where price_quartile in (1, 3)
+group by price_quartile
+),
+iqr_calculation as (
+select 
+1.5 * (sum(case when price_quartile = 3 then quartile_break end) - sum(case when price_quartile = 1 then quartile_break end)) as "1.5 * iqr"
+from quartile_break_values
+),
+lower_threshold as (
+select
+sum(case when price_quartile = 1 then quartile_break end) - (select * from iqr_calculation) as "lower_threshold"
+from quartile_break_values),
+upper_threshold as (
+select
+sum(case when price_quartile = 3 then quartile_break end) + (select * from iqr_calculation) as "upper_threshold"
+from quartile_break_values),
+outliers as (
+select * from time_series.raw_sales
+where price < (select * from lower_threshold) or price > (select * from upper_threshold)
+)
 
+select * from outliers
+order by price
 ```
 
 4. Determine the percentage of properties with prices above the average price
