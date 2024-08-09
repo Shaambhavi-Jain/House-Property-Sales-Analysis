@@ -198,11 +198,8 @@ select year_quarter, sum(price) from cte
 group by year_quarter
 order by year_quarter
 ```
-3. What is the average price change over time for each postcode?
-```sql
-```
 
-4. Identify the month with the highest total sales for each year (seasonal analysis).
+3. Identify the month with the highest total sales for each year (seasonal analysis).
 ```sql
 with cte as (
 select date_format(datesold, "%Y-%M") as "y_m", price from time_series.raw_sales
@@ -221,11 +218,11 @@ select year, y_m, revenue from ranked_revenue
 where r = 1
 ```
 
-5. Calculate a 3-month moving average of property prices.
+4. Calculate a 3-month moving average of property prices.
 ```sql
 ```
 
-6. Calculate the year-over-year percentage change in property prices for each postcode.
+5. Calculate the year-over-year percentage change in property prices for each postcode.
 ```sql
 with cte as (select postcode, extract(year from datesold) as y, sum(price) as revenue from time_series.raw_sales
 group by postcode, y
