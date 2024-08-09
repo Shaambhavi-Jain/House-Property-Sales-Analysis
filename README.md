@@ -29,7 +29,7 @@ A series of SQL queries were employed to analyze the dataset and identify key pa
 ### Key Findings 
 Some of the key findings from the analysis are:
 - The most sought-after properties within the dataset comprised of 3 or 4 bedrooms, indicating a strong preference for family-sized homes.
-- The median sale price of properties was determined to be $550,000, providing a benchmark for market valuation.
+- The median sale price of properties was determined to be $550,000 providing a benchmark for market valuation.
 - The year 2018 exhibited peak property values, with a median sale price reaching $615,000, suggesting a strong market performance during that period.
 - The year 2007 recorded the lowest volume of property sales, indicating a potential market downturn or economic challenges during that period.
 - Approximately 39% of properties were sold above the average market value, suggesting a differentiated market with a segment of high-value properties.
