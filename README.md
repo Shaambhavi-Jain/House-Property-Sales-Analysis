@@ -26,7 +26,7 @@ A series of SQL queries were employed to analyze the dataset and identify key pa
 
 [Click here](https://github.com/Shaambhavi-Jain/House_Property_Sales_Analysis/blob/main/Data-Analysis.md) to view the SQL queries.
 
-[Click here] to view the visualisations.
+[Click here](https://github.com/Shaambhavi-Jain/House_Property_Sales_Analysis/blob/main/Data-Analysis.md#data-visualisation) to view the visualisations.
 
 ### Key Findings 
 Some of the key findings from the analysis are:
