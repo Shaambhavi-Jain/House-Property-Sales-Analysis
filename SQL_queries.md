@@ -279,3 +279,19 @@ on c1.postcode = c2.postcode and c1.y + 1 = c2.y
 ```
 
 ### Data Visualisation
+1. Plot the 3-month moving average of property prices.
+
+
+2. Plot the total number of sales for each quarter.
+
+
+3. Plot the total revenue of sales for each quarter.
+
+
+4. Find the price change over time for each postcode.
+
+
+5. Plot the price outliers
+
+
+6. Plot the year-over-year and month-over-month percentage change in property prices for each postcode.
