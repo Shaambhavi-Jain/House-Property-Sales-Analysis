@@ -220,6 +220,11 @@ where r = 1
 
 4. Calculate a 3-month moving average of property prices.
 ```sql
+select *,
+(select avg(price) from time_series.raw_sales as r2
+where r2.datesold between date_sub(r1.datesold, INTERVAL 3 MONTH) and r1.datesold) as moving_avg
+from time_series.raw_sales as r1
+order by datesold
 ```
 
 5. Calculate the year-over-year percentage change in property prices for each postcode.
