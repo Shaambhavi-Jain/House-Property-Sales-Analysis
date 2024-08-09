@@ -282,7 +282,9 @@ on c1.postcode = c2.postcode and c1.y + 1 = c2.y
 1. Plot the 3-month moving average of property prices.
 
 
-2. Plot the total number of sales for each quarter.
+2. Plot the total number of property sales for each quarter.
+<img width="1219" alt="Screenshot 2024-08-10 at 12 52 21 AM" src="https://github.com/user-attachments/assets/315a1cdd-2d01-44b2-a916-4817b4f94ca7">
+
 
 
 3. Plot the total revenue of sales for each quarter.
