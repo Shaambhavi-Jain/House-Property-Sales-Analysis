@@ -283,17 +283,20 @@ on c1.postcode = c2.postcode and c1.y + 1 = c2.y
 
 
 2. Plot the total number of property sales for each quarter.
-<img width="1219" alt="Screenshot 2024-08-10 at 12 52 21 AM" src="https://github.com/user-attachments/assets/315a1cdd-2d01-44b2-a916-4817b4f94ca7">
-
+<img width="1219" alt="Screenshot 2024-08-10 at 12 52 21 AM" src="https://github.com/user-attachments/assets/2ff45110-205c-4444-ac62-a2933c4c6014">
 
 
 3. Plot the total revenue of sales for each quarter.
+<img width="1283" alt="Screenshot 2024-08-10 at 1 01 19 AM" src="https://github.com/user-attachments/assets/d5a83102-29c8-4879-ad65-1554301079ba">
 
 
 4. Find the price change over time for each postcode.
 
 
 5. Plot the price outliers
+<img width="800" alt="Screenshot 2024-08-10 at 1 18 30 AM" src="https://github.com/user-attachments/assets/356c21a2-c296-4fa0-99f4-b4ddfbb85a31">
 
 
-6. Plot the year-over-year and month-over-month percentage change in property prices for each postcode.
+6. Plot the year-over-year percentage change in property prices for the postcode 2604.
+<img width="800" alt="Screenshot 2024-08-10 at 1 33 58 AM" src="https://github.com/user-attachments/assets/c67cee6a-0785-4f88-a876-fd8d6be3b971">
+
