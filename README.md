@@ -1,6 +1,16 @@
 # House Property Sales Analysis
 
-### Project Overview / Objectives 
+## Table of Contents
+- [Project Overview / Objectives](#project-overview)
+- [Dataset](#dataset)
+- [Business Problems](#business-problems)
+- [Methodology](#methodology)
+- [Key Findings](#key-findings)
+- [Recommendations](#recommendations)
+- [Future Scope](#future-scope)
+- [References](#references)
+
+### Project Overview
 This project applies SQL to analyze house property sales data from 2007 to 2019, to identify trends, patterns, and anomalies within the dataset through data exploration, statistical analysis, and data cleansing. Ultimately, the analysis will provide a foundation for informed data-backed decision-making in the real estate sector.
 
 ### Dataset
