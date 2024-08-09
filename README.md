@@ -41,3 +41,4 @@ Some of the key findings from the analysis are:
 
 ### References
 1. [Outlier Calculation](https://dataschool.com/how-to-teach-people-sql/how-to-find-outliers-with-sql/)
+2. [Moving Average Calculation](https://www.geeksforgeeks.org/compute-a-moving-average-in-mysql/)
