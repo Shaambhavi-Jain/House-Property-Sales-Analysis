@@ -8,6 +8,19 @@
 ### Data Cleaning
 1. Check for inconsistencies in the data
 ```sql
+select distinct datesold from time_series.raw_sales
+```
+```sql
+select distinct postcode from time_series.raw_sales
+```
+```sql
+select distinct price from time_series.raw_sales
+```
+```sql
+select distinct propertytype from time_series.raw_sales
+```
+```sql
+select distinct bedrooms from time_series.raw_sales
 ```
 
 2. Identify and handle missing values
@@ -27,9 +40,22 @@ where price is null
 select * from time_series.raw_sales
 where propertyType is null
 ```
+
 3. Identify and address potential errors or anomalies in the data
 ```sql
-
+select distinct datesold from time_series.raw_sales
+```
+```sql
+select distinct postcode from time_series.raw_sales
+```
+```sql
+select distinct price from time_series.raw_sales
+```
+```sql
+select distinct propertytype from time_series.raw_sales
+```
+```sql
+select distinct bedrooms from time_series.raw_sales
 ```
 
 ### Exploratory Data Analysis (EDA)
