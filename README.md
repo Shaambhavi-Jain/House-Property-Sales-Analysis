@@ -64,5 +64,5 @@ Some of the key findings from the analysis are:
 - Continuous monitoring of market trends is essential to identify emerging opportunities and challenges, allowing for timely adjustments in business strategies.
 
 ### References
-1. [Outlier Calculation](https://dataschool.com/how-to-teach-people-sql/how-to-find-outliers-with-sql/)
+1. [IQR Calculation](https://dataschool.com/how-to-teach-people-sql/how-to-find-outliers-with-sql/)
 2. [Moving Average Calculation](https://www.geeksforgeeks.org/compute-a-moving-average-in-mysql/)
