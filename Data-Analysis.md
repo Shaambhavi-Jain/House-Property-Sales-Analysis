@@ -279,7 +279,8 @@ on c1.postcode = c2.postcode and c1.y + 1 = c2.y
 ```
 
 ### Data Visualisation
-1. Plot the 3-month moving average of property prices.
+1. Plot the 3-month moving average of property prices for the postcode 2607.
+<img width="1329" alt="Screenshot 2024-08-10 at 11 45 41 AM" src="https://github.com/user-attachments/assets/15f1324a-26df-4927-99f4-f8c6eb3a3b17">
 
 
 2. Plot the total number of property sales for each quarter.
@@ -290,7 +291,8 @@ on c1.postcode = c2.postcode and c1.y + 1 = c2.y
 <img width="1283" alt="Screenshot 2024-08-10 at 1 01 19 AM" src="https://github.com/user-attachments/assets/d5a83102-29c8-4879-ad65-1554301079ba">
 
 
-4. Find the price change over time for each postcode.
+4. Find the price change over time for the postcode 2607.
+<img width="1412" alt="Screenshot 2024-08-10 at 11 42 26 AM" src="https://github.com/user-attachments/assets/dc831caf-0c9f-4773-9bdc-6b04127992fe">
 
 
 5. Plot the price outliers
